@@ -411,11 +411,11 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
 
-<li>Contents</li>
-
 <li>Hola</li>
 
 <li>Make</li>
+
+<li>TableOfContents</li>
 
 <li>Visa</li>
 
@@ -447,7 +447,7 @@ Error message and password prompt
 <div created="20191104063336733" modified="20191104082621865" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
 <pre>hide</pre>
 </div>
-<div created="20191103133655767" modified="20191103133655767" title="$:/config/RelinkOnRename">
+<div created="20191103133655767" modified="20191104102520972" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.21">
@@ -9706,7 +9706,7 @@ Error message and password prompt
 <div created="20191104081244273" modified="20191104081251547" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
 </div>
-<div created="20191104102436725" list="Hola" modified="20191104102436726" title="$:/StoryList">
+<div created="20191104102436725" list="TableOfContents" modified="20191104102509544" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10653,11 +10653,6 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191104101452789" modified="20191104102104240" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>50%</pre>
 </div>
-<div created="20191104083019691" list-before="$:/core/ui/SideBar/Open" modified="20191104085127648" tags="$:/tags/SideBar" title="Contents">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable 'Contents' sort[title]&gt;&gt;
-&lt;/div&gt;</pre>
-</div>
 <div author="damu" created="20191103125846787" modified="20191104102457191" tags="TableOfContents announcement plaintext" title="Hola">
 <pre>I am going to keep this as the place where I keep my notes from the internet.
 
@@ -10666,7 +10661,12 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191104063005026" modified="20191104063216220" tags="[[notes ]]" title="Make">
 <pre>I need to learn GNU Make very well. Automating my testing flow using it would be convenient. </pre>
 </div>
-<div created="20191103164329240" modified="20191104085237253" tags="visa [[notes ]] Contents" title="Visa">
+<div caption="Contents" created="20191104083019691" list-before="$:/core/ui/SideBar/Open" modified="20191104102651038" tags="$:/tags/SideBar" title="TableOfContents" type="">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+&lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
+&lt;/div&gt;</pre>
+</div>
+<div created="20191103164329240" modified="20191104102651040" tags="visa [[notes ]] TableOfContents" title="Visa">
 <pre>Visakan is a very interesting person from Singapore who I have started following fairly recently. He has a very unique point of view and his self-titled &quot;word vomits&quot; are rather idea and information dense. 
 His blog is at: http://www.visakanv.com/blog/
 I am adding it here because I want to revisit it till I digest the parts I want to undersand.
