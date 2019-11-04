@@ -211,8 +211,6 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
-<li>$:/temp/NewTagName</li>
-
 <li>$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/languages/ca-ES</li>
 
 <li>$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/languages/cs-CZ</li>
@@ -423,17 +421,19 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
 
-<li>Draft of 'Leetcode'</li>
-
 <li>Hola</li>
 
 <li>Learn</li>
+
+<li>LeetCode</li>
 
 <li>Make</li>
 
 <li>TableOfContents</li>
 
 <li>TiddlyWiki</li>
+
+<li>TwoSum</li>
 
 <li>Visa's Blog</li>
 
@@ -9735,7 +9735,7 @@ Error message and password prompt
 <div created="20191104121247335" modified="20191104121655464" title="$:/state/toc/TableOfContents-Visakan--118161433">
 <pre>open</pre>
 </div>
-<div created="20191104141303616" list="Learn [[Draft of 'Leetcode']] Hola" modified="20191104141339421" title="$:/StoryList">
+<div created="20191104141303616" list="Learn LeetCode TwoSum Hola" modified="20191104141621174" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191104114345860" modified="20191104114345861" title="$:/temp/advancedsearch">
@@ -9798,9 +9798,6 @@ Error message and password prompt
         }
     }
 }</pre>
-</div>
-<div created="20191104141534380" modified="20191104141534380" title="$:/temp/NewTagName">
-<pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20191104064936725" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20191104064936725" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
@@ -10691,7 +10688,33 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191104101452789" modified="20191104113937054" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>686px</pre>
 </div>
-<div created="20191104141353719" draft.of="Leetcode" draft.title="TwoSum" modified="20191104141551656" tags="LeetCode" title="Draft of 'Leetcode'">
+<div author="damu" created="20191103125846787" modified="20191104135339297" tags="announcement" title="Hola">
+<pre>I am keeping this as the place where I keep my notes from the internet and elsewhere. Check it out: [[TableOfContents]]
+
+'Til Later</pre>
+</div>
+<div created="20191104121521756" modified="20191104141334188" tags="TableOfContents" title="Learn">
+<pre>This contains the list of things I want to learn or am in the process of learning:
+
+* [[Make]]
+* [[Leetcode]]</pre>
+</div>
+<div created="20191104141627534" modified="20191104141714210" tags="Learn" title="LeetCode">
+<pre>Here I am adding my solutions to LeetCode problems.
+# TwoSum</pre>
+</div>
+<div created="20191104063005026" modified="20191104121734306" tags="[[notes ]] Learn" title="Make">
+<pre>I need to learn GNU Make very well. Automating my testing flow using it would be convenient. </pre>
+</div>
+<div caption="ToC" created="20191104083019691" list-before="$:/core/ui/SideBar/Open" modified="20191104110402797" tags="$:/tags/SideBar" title="TableOfContents" type="">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+&lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
+&lt;/div&gt;</pre>
+</div>
+<div created="20191104110130064" modified="20191104122005258" tags="Learn" title="TiddlyWiki">
+<pre>This page contains the detailed references for &lt;a target=&quot;_blank&quot; href=&quot;https://tiddlywiki.com&quot;&gt;TW&lt;/a&gt;</pre>
+</div>
+<div created="20191104141353719" modified="20191104141606082" tags="LeetCode" title="TwoSum">
 <pre>Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -10705,28 +10728,6 @@ def twoSum(self, nums: List[int], target: int) -&gt; List[int]:
         else:
             found_hash[n] = i
 ```</pre>
-</div>
-<div author="damu" created="20191103125846787" modified="20191104135339297" tags="announcement" title="Hola">
-<pre>I am keeping this as the place where I keep my notes from the internet and elsewhere. Check it out: [[TableOfContents]]
-
-'Til Later</pre>
-</div>
-<div created="20191104121521756" modified="20191104141334188" tags="TableOfContents" title="Learn">
-<pre>This contains the list of things I want to learn or am in the process of learning:
-
-* [[Make]]
-* [[Leetcode]]</pre>
-</div>
-<div created="20191104063005026" modified="20191104121734306" tags="[[notes ]] Learn" title="Make">
-<pre>I need to learn GNU Make very well. Automating my testing flow using it would be convenient. </pre>
-</div>
-<div caption="ToC" created="20191104083019691" list-before="$:/core/ui/SideBar/Open" modified="20191104110402797" tags="$:/tags/SideBar" title="TableOfContents" type="">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
-&lt;/div&gt;</pre>
-</div>
-<div created="20191104110130064" modified="20191104122005258" tags="Learn" title="TiddlyWiki">
-<pre>This page contains the detailed references for &lt;a target=&quot;_blank&quot; href=&quot;https://tiddlywiki.com&quot;&gt;TW&lt;/a&gt;</pre>
 </div>
 <div created="20191104121153404" modified="20191104121335013" tags="Visakan Journal" title="Visa's Blog">
 <pre>http://www.visakanv.com/blog/</pre>
