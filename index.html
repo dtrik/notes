@@ -10779,7 +10779,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191104063005026" modified="20191105104356373" tags="LinuxBasics" title="Make">
 <pre>I ~~need~~ want to learn [[GNU Make|https://www.gnu.org/software/make/]] very well. Automating my testing flow using it would be convenient. </pre>
 </div>
-<div created="20191105124858895" modified="20191105125123677" tags="LeetCode" title="SameTree">
+<div created="20191105124858895" modified="20191105125218110" tags="LeetCode" title="SameTree">
 <pre>Q. Given two binary trees, write a function to check if they are the same or not.
 
 Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
@@ -10789,7 +10789,7 @@ A. Here the easiest solution is to recursively call the function on left and rig
 ```
 def isSameTree(p: TreeNode, q: TreeNode) -&gt; bool:
         if p and q:
-            return p.val == q.val and isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+            return (p.val == q.val) and isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
         elif bool(p) == bool(q):
             return True
         else:
@@ -10804,7 +10804,7 @@ def isSameTree(p: TreeNode, q: TreeNode) -&gt; bool:
 <div created="20191104110130064" modified="20191104191227207" tags="Bookmarks" title="TiddlyWiki">
 <pre>This page contains the detailed references for [[TW5|https://tiddlywiki.com/]]</pre>
 </div>
-<div created="20191104141353719" modified="20191104144107981" tags="LeetCode" title="TwoSum">
+<div created="20191104141353719" modified="20191105125134764" tags="LeetCode" title="TwoSum">
 <pre>Q. Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -10813,7 +10813,7 @@ A. Here the intuition is that we first create a hash (dictionary in python) of i
 Python implementation is below:
 
 ```
-def twoSum(self, nums: List[int], target: int) -&gt; List[int]:
+def twoSum(nums: List[int], target: int) -&gt; List[int]:
     found_hash = {}
     for i,n in enumerate(nums):
         if target - n in found_hash:
