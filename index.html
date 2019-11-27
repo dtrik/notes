@@ -10922,10 +10922,23 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191106125706706" modified="20191106125737409" tags="Learn" title="DataScience">
 <pre>This is the parent tiddler for all things of DataScience</pre>
 </div>
-<div created="20191127041756743" modified="20191127042218536" tags="CVCC" title="Day0">
-<pre>Install [[conda|https://dtrik.github.io/conda-instructions/]]
-Create environment
-Install opencv for python</pre>
+<div created="20191127041756743" modified="20191127042730098" tags="CVCC" title="Day0">
+<pre>Read about conda and other details [[here|https://dtrik.github.io/conda-instructions/]]
+
+# Create and activate environment
+
+```
+conda create --name pyims
+conda activate pyims
+```
+
+# Install opencv for python
+The latest opencv version (4.1.2) is available in the conda-forge channel
+
+```
+conda install -c conda-forge opencv
+```
+</pre>
 </div>
 <div created="20191126173802472" modified="20191126174208384" tags="CVCC" title="Day1">
 <pre>Activity for [[Day 1|https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning]]</pre>
