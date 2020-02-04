@@ -519,6 +519,8 @@ Error message and password prompt
 
 <li>Hola</li>
 
+<li>Install pip in Ubuntu</li>
+
 <li>InterviewPrep</li>
 
 <li>Learn</li>
@@ -9965,7 +9967,7 @@ Error message and password prompt
 <div created="20191126172955294" modified="20191126172955294" title="$:/state/toc/TableOfContents/Learn/QuantumComputing-QCResources--118161433">
 <pre>open</pre>
 </div>
-<div created="20200203185716500" list="[[Ubuntu Firewall]] [[Missing Windows in GRUB]] Hola" modified="20200203185716500" title="$:/StoryList">
+<div created="20200203185716500" list="[[Install pip in Ubuntu]]" modified="20200203191635500" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191104114345860" modified="20191104114345861" title="$:/temp/advancedsearch">
@@ -10785,7 +10787,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20191104064936725" dependents="" description="Basic theme" modified="20191104064936725" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20191104063305636" modified="20200203185742700" title="$:/temp/search">
+<div created="20191104063305636" modified="20200204021429800" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20191106061951233" modified="20191106061951233" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
@@ -11007,6 +11009,26 @@ How to efficiently search knowledge:
 <pre>I am keeping this as the place where I keep my notes from the internet and elsewhere. Check it out: {{TableOfContents}}
 
 'Til Later</pre>
+</div>
+<div created="20200204023426300" modified="20200204023932400" tags="Linux" title="Install pip in Ubuntu">
+<pre>My Ubuntu installation did not have pip installed.
+
+```
+#First install python3-distutils as pip requires it for installation
+sudo apt install python3-distutils
+
+#Then get pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+#Then install for the user
+python3 get-pip.py --user
+
+#pip is installed at ~/.local/bin
+#set PATH variable to use 'pip3 install --user package_name
+export PATH=&quot;$PATH:$HOME/.local/bin&quot;
+
+```
+</pre>
 </div>
 <div created="20191108075719201" modified="20191217063615472" tags="Programming" title="InterviewPrep">
 <pre>* [[SoftwareInterviewPreparation|https://orrsella.gitbooks.io/soft-eng-interview-prep/content/]]
