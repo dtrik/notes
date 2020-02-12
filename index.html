@@ -529,6 +529,8 @@ Error message and password prompt
 
 <li>Install Emacs in Ubuntu</li>
 
+<li>Install i3 in Ubuntu</li>
+
 <li>Install pip in Ubuntu</li>
 
 <li>InterviewPrep</li>
@@ -10002,7 +10004,7 @@ Error message and password prompt
 <div created="20200209173839292" modified="20200209173842325" title="$:/state/toc/TableOfContents/Music-ClassicalMusic--1140706533">
 <pre>close</pre>
 </div>
-<div created="20200212182610400" list="LinuxBasics UsefulCommands Make Computers" modified="20200212183122800" title="$:/StoryList">
+<div created="20200212182610400" list="[[Install i3 in Ubuntu]] LinuxBasics [[Install pip in Ubuntu]] EmacsKeyBindings UsefulCommands Make Computers" modified="20200212193024900" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191104114345860" modified="20191104114345861" title="$:/temp/advancedsearch">
@@ -10822,7 +10824,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20191104064936725" dependents="" description="Basic theme" modified="20191104064936725" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20191104063305636" modified="20200204023957000" title="$:/temp/search">
+<div created="20191104063305636" modified="20200212183208600" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20191106061951233" modified="20191106061951233" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
@@ -11055,6 +11057,17 @@ To remove the above installation
 sudo apt remove --autoremove emacs26 emacs26-nox
 ```
 
+</pre>
+</div>
+<div created="20200212183534400" modified="20200212194049700" tags="LinuxBasics" title="Install i3 in Ubuntu">
+<pre>i3wm is a tiling window manager which looks rather good and at least way better than the default Unity(?)/GNOME thing. Installing is as simple as:
+
+```
+sudo apt-get install i3
+```
+There should be terminal already installed, gnome-terminal will suffice. Then log out and in the login options, there will be i3. In the first login, it will ask to configure the $Mod key. I picked the Windows/Super key as I use Emacs and I didn't want to mix Emacs C/M keybindings with i3 keybindings. 
+
+A new terminal can be opened with $Mod+Enter. Installed applications/programs can be opened using dmenu invoked by $Mod+d and searching for name. To switch to a new screen, use $Mod+$screen_number. To move a program to a different screen, use $Mod+Shift+$screen_number. These should cover a big chunk of the usecases. i3 [[documentation|https://i3wm.org/]] is very detailed in case of additional questions. 
 </pre>
 </div>
 <div created="20200204023426300" modified="20200212182936400" tags="LinuxBasics" title="Install pip in Ubuntu">
