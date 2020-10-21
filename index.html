@@ -9904,7 +9904,7 @@ Error message and password prompt
 <div created="20191104065015874" modified="20191104065015874" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/plugins/tiddlywiki/markdown">
 <pre>yes</pre>
 </div>
-<div created="20191103160257859" modified="20200909080730000" title="$:/state/sidebar">
+<div created="20191103160257859" modified="20201021170337300" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20191104114345862" modified="20191104114345862" title="$:/state/tab--1498284803">
@@ -9943,8 +9943,8 @@ Error message and password prompt
 <div created="20191203032956450" modified="20200209173939141" title="$:/state/toc/TableOfContents-Bookmarks--1140706533">
 <pre>open</pre>
 </div>
-<div created="20191104142323042" modified="20191104142323042" title="$:/state/toc/TableOfContents-Bookmarks--118161433">
-<pre>open</pre>
+<div created="20191104142323042" modified="20201021170343100" title="$:/state/toc/TableOfContents-Bookmarks--118161433">
+<pre>close</pre>
 </div>
 <div created="20191106062359296" modified="20191106062401158" title="$:/state/toc/TableOfContents-Bookmarks-497309061">
 <pre>close</pre>
@@ -9952,8 +9952,8 @@ Error message and password prompt
 <div created="20191212181124477" modified="20200211174810500" title="$:/state/toc/TableOfContents-Learn--1140706533">
 <pre>open</pre>
 </div>
-<div created="20191104121741412" modified="20200212182703400" title="$:/state/toc/TableOfContents-Learn--118161433">
-<pre>open</pre>
+<div created="20191104121741412" modified="20201021170344100" title="$:/state/toc/TableOfContents-Learn--118161433">
+<pre>close</pre>
 </div>
 <div created="20191104141923401" modified="20191106125849265" title="$:/state/toc/TableOfContents-Learn-497309061">
 <pre>close</pre>
@@ -10063,7 +10063,7 @@ Error message and password prompt
 <div created="20200209173839292" modified="20200209173842325" title="$:/state/toc/TableOfContents/Music-ClassicalMusic--1140706533">
 <pre>close</pre>
 </div>
-<div list="Hola" title="$:/StoryList">
+<div created="20201021170352100" list="UsefulCommands Hola" modified="20201021170352100" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191104114345860" modified="20191104114345861" title="$:/temp/advancedsearch">
@@ -10883,8 +10883,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20191104064936725" dependents="" description="Basic theme" modified="20191104064936725" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20191104063305636" modified="20201018181256000" title="$:/temp/search">
-<pre></pre>
+<div created="20191104063305636" modified="20201021170349400" title="$:/temp/search">
+<pre>gre</pre>
 </div>
 <div created="20191106061951233" modified="20191106061951233" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
 <pre>loaded</pre>
@@ -11515,13 +11515,15 @@ sudo ufw enable
 ```
 </pre>
 </div>
-<div created="20191106065428305" modified="20200316171432900" tags="Linux" title="UsefulCommands">
+<div created="20191106065428305" modified="20201021170515300" tags="Linux" title="UsefulCommands">
 <pre>I add useful shell shortcuts here:
 
 ```
 # collects num lines after pattern in filename file
 grep -A num pattern filename 
 
+# considers pattern as a fixed string, ignores special characters
+grep -F &quot;pattern&quot; filename
 # unpacks filename.tar.gz in one shot
 gtar xzf filename.tar.gz
 
