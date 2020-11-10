@@ -11278,64 +11278,53 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <pre>This is a 17 part series acting as a crash course on computer vision. 
 &lt;&lt;list-links &quot;[tag[CVCC]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20191124115129894" modified="20201110043047800" tags="Bookmarks" title="CondaQuicknotes">
+<div created="20191124115129894" modified="20201110043510500" tags="Bookmarks" title="CondaQuicknotes">
 <pre>My summary of useful [[conda instructions|https://dtrik.github.io/blog/2019/10/28/conda-instructions.html]]. 
 
 ```
-# verify that conda is available
+#verify that conda is available
 conda --version
 ```
 ```
-#update to lastest version of conda:
+#update to lastest version of conda
 conda update conda
 ```
-
-Most used commands
-
-To create a new environment:
-
+```
+#create a new environment
 conda create --name myenv
-
-This creates an environment with the same python version as the Anaconda installation. To create an environment with a different version of python (say 3.5):
-
+```
+```
+#create an environment with a different version of python (say 3.5)
 conda create --name myenv python=3.5
-
-These create environments with a default set of packages. To create an environment of python 3.5 and installing a particular package of required version:
-
+```
+```
+#create an environment of python 3.5 and installing a particular package of required version
 conda create --name myenv package_name=version python=3.5
-
-It is recommended to install all the packages required in an environment in one go. To activate the created environment:
-
+```
+```
+#activate the created environment
 conda activate myenv
-
-To go back to base environment:
-
+```
+```
+#go back to base environment:
 conda activate
+```
 
-To install a package using conda:
+```
+#to install a package using conda:
+#search for the package
+conda search package_name
 
-    Search for the package
+#install the package
+conda install package_name
 
-     conda search package_name
-
-    Install the package
-
-     conda install package_name
-
-    Verify it is installed
-
-     conda list
-
-We can also use pip along with conda. To use pip in the environment, first install pip:
-
-conda install -n myenv pip
-
-Conda and pip can have conflicts. So install as much as possible using conda. Other recommendations can be seen from here
-
-To remove an environment:
-
+#verify it is installed
+conda list
+```
+```
+#to remove an environment
 conda remove --name myenv --all
-</pre>
+```</pre>
 </div>
 <div created="20191106125706706" modified="20191212181254431" tags="Learn" title="DataScience">
 <pre>This is the parent tiddler for all things of DataScience.
