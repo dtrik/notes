@@ -559,6 +559,10 @@ Error message and password prompt
 
 <li>Designing Data-Intensive Applications</li>
 
+<li>Draft of 'FoN L1.1'</li>
+
+<li>Elastic Resistor</li>
+
 <li>EmacsKeyBindings</li>
 
 <li>FoN L1.1</li>
@@ -10282,7 +10286,7 @@ Error message and password prompt
 <div created="20200209173839292" modified="20200209173842325" title="$:/state/toc/TableOfContents/Music-ClassicalMusic--1140706533">
 <pre>close</pre>
 </div>
-<div created="20201124171644500" list="[[Current Flow]] Conduction [[FoN L1.1]] Hola" modified="20201128164127200" title="$:/StoryList">
+<div created="20201124171644500" list="[[Elastic Resistor]] [[Draft of 'FoN L1.1']] Hola" modified="20201128164127200" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191104114345860" modified="20191104114345861" title="$:/temp/advancedsearch">
@@ -11354,7 +11358,7 @@ conda list
 conda remove --name myenv --all
 ```</pre>
 </div>
-<div created="20201128163753700" modified="20201128165048100" tags="ssd" title="Conduction">
+<div created="20201128163753700" modified="20201128165133700" tags="ssd" title="Conduction">
 <pre>We start with the notion of conduction and conductance. It measures how easily electrons can flow. The resistance $$ R = \rho \frac{L}{A} $$ and the conductance $$ G = \frac{1}{R} = \sigma \frac{A}{L} $$.
 
 $$\rho$$ and $$\sigma$$ are fundamental properties of the conducting material.
@@ -11371,13 +11375,13 @@ Bottom-Up Approach
 
 Here we start with the notion of ballistic transport. This applies to devices where the channel is shorter than the mean free path. This means, there are no collisions and electrons move from one contact to the other like a bullet. In case of ballistic transport, the conductance is: 
 
-$$G_B = \frac{q^2}{h} * M$$
+$$G_B = \frac{q^2}{h}M$$
 
 Here q is again the charge of the electron, h is the Planck's constant and M is the number of modes which will be described in detail in a later lesson but for now can be considered to be like the number of lanes in a highway. We can see here that q^2/h is a fundamental constant which is approx. 1/(25 kOhm).
 
 This conductance can be generalized to bigger devices as well: 
 
-$$G = G_B \frac{\lambda}{(L+\lambda)} $$ 
+$$G = G_B \frac{\lambda}{L+\lambda} $$ 
 
 Here $$\lambda$$ is the mean free path.
 
@@ -11459,6 +11463,31 @@ eg: $$ A = \{x \in X | f(x) = 0\} $$ means the set $$ A $$  is defined as having
 </div>
 <div author="Martin Kleppmann" created="20201021173244200" modified="20201022024022300" tags="ToRead" title="Designing Data-Intensive Applications">
 <pre>Details the principles and tradeoffs in data systems and surveys the design decisions taken by different products.</pre>
+</div>
+<div created="20201128160852500" draft.of="FoN L1.1" draft.title="FoN L1.1" modified="20201128170345700" tags="ssd" title="Draft of 'FoN L1.1'">
+<pre>Introduction
+
+Electronics are becoming smaller and more powerful. This happens as transistor size increases and therefore packing more and more into smaller chips. Channels are now a few hundred or less atoms across. It is hard to predict where the technology will be in a few years. Instead this course focuses on the fundamentals or nanoelectronics which are expected to stand the test of time.
+
+{{Conduction}}
+
+
+{{Current Flow}}
+
+
+{{Elastic Resistor}}
+
+
+The next lecture focuses on the density of states and the Fermi function.</pre>
+</div>
+<div created="20201128170327000" modified="20201128170403200" tags="" title="Elastic Resistor">
+<pre>We reach this with the concept of an elastic resistor, also known as a Landauer resistor. When electrons travel from one contact to another, there is heat dissipation. It is observed that in case of small devices, where ballistic transport comes into picture, most of the heat is dissipated at the contacts.
+
+Usually, electron motion is a mix of thermodynamics and mechanics. Mechanics is dominated by force driven actions while thermodynamics is dominated by entropy driven actions. To describe electron flow it usually requires combining semi-classical mechanics and entropy driven actions using the Boltzmann Transport Equation. In case of quantum mechanics, it requires combining the Schrodinger equation and entropy driven actions using the Non-equilibrium Green's Function. 
+
+But in case of elastic resistors, this forms almost a clearly separated action, with the thermodynamic forces at the contacts and the mechanical forces dominating at the channel. Thus understanding electron flow is comparatively easier. This can be used for both ballistic and diffusive transport.
+
+In case of big devices, they are modeled as a series of small elastic resistors. So the electron moves elastically from one point to the next, loses some energy, elastically again and so on. Elastic transport means the electron does not lose any energy to the lattice. So even with a diffusive motion, it can be elastic. Ballistic on the other hand means it does lose momentum. The results at low bias match exactly with the Boltzmann formalism. At high bias, we still get a good enough approximation.</pre>
 </div>
 <div created="20191106064953780" modified="20201015130751900" tags="Linux" title="EmacsKeyBindings">
 <pre>I am keeping this as a quick reference for Emacs:
